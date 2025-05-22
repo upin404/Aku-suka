@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kuis Kepribadian</title>
+  <title>Kuis Gombal</title>
   <style>
     body {
       font-family: sans-serif;
@@ -23,6 +23,10 @@
       background-color: #ff66a3;
       color: white;
       cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #e05590;
     }
     #result {
       margin-top: 30px;
@@ -38,11 +42,9 @@
 
   <div id="quiz">
     <p>1. Kamu lebih suka:</p>
-    <button onclick="nextQuestion()">Duduk santai</button>
-    <button onclick="nextQuestion()">Jalan-jalan</button>
+    <button onclick="showResult()">Duduk santai</button>
+    <button onclick="showResult()">Jalan-jalan</button>
   </div>
 
   <div id="result">
-    <h2>Selamat!</h2>
-    <p>Dari jawabanmu, kamu ternyata...</p>
-    <p><strong>Cocok jadi pasangan
+    <h2>Sel
